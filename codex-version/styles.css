@@ -412,8 +412,9 @@ li::marker {
   padding: clamp(2.2rem, 5vw, 5.4rem);
   overflow: hidden;
   border-radius: var(--radius-lg);
-  background: var(--ink);
-  color: #fff;
+  border: 1px solid var(--ink);
+  background: var(--surface);
+  color: var(--ink);
   box-shadow: 12px 12px 0 var(--lavender);
 }
 
@@ -424,7 +425,7 @@ li::marker {
   aspect-ratio: 1;
   top: -26%;
   right: -7%;
-  border: clamp(2.8rem, 6.5vw, 6rem) solid var(--sky);
+  border: clamp(2.8rem, 6.5vw, 6rem) solid var(--lavender);
   border-radius: 50%;
 }
 
@@ -451,9 +452,9 @@ li::marker {
   max-width: 36rem;
   margin: 0 0 clamp(1.7rem, 4vw, 3.4rem);
   padding: .58rem .76rem;
-  border: 1px solid rgba(255, 255, 255, .25);
+  border: 1px solid var(--line-dark);
   border-radius: 999px;
-  color: #d9dae0;
+  color: var(--ink-soft);
   font-size: .67rem;
   font-weight: 760;
   letter-spacing: .1em;
@@ -475,12 +476,12 @@ li::marker {
 }
 
 .opening h1 .accent {
-  color: var(--lavender);
+  color: var(--ink);
 }
 
 .opening .role {
   margin-bottom: 1.3rem;
-  color: var(--lavender);
+  color: var(--ink-soft);
   font-size: .74rem;
   font-weight: 790;
   letter-spacing: .12em;
@@ -489,30 +490,30 @@ li::marker {
 
 .opening .lead {
   max-width: 35rem;
-  color: #f4f4f6;
+  color: var(--ink-soft);
   font-size: clamp(1rem, 1.5vw, 1.18rem);
   line-height: 1.55;
 }
 
 .opening .lead + .lead {
-  color: #bfc0c7;
+  color: var(--muted);
 }
 
 .opening .btn {
-  border-color: var(--lavender);
-  background: var(--lavender);
-  color: var(--ink);
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--surface);
 }
 
 .opening .btn:hover {
-  border-color: #fff;
-  background: #fff;
-  box-shadow: 5px 5px 0 var(--sky);
-  color: var(--ink);
+  border-color: var(--ink-soft);
+  background: var(--ink-soft);
+  box-shadow: 5px 5px 0 var(--lavender);
+  color: var(--surface);
 }
 
 .opening .btn-row > a:not(.btn) {
-  color: #fff;
+  color: var(--ink);
 }
 
 .portrait {
@@ -521,10 +522,10 @@ li::marker {
   max-height: 38rem;
   margin: 0;
   overflow: hidden;
-  border: .45rem solid #fff;
+  border: .45rem solid var(--lavender);
   border-radius: 13rem 13rem 1.6rem 1.6rem;
   background: #e7dfd5;
-  box-shadow: 0 0 0 .2rem var(--lavender);
+  box-shadow: 0 0 0 .2rem var(--sky);
 }
 
 .portrait img {
@@ -868,8 +869,9 @@ li::marker {
   position: relative;
   overflow: hidden;
   padding: clamp(4rem, 9vw, 8.5rem) 0 clamp(4.2rem, 8vw, 7.6rem);
-  background: var(--ink);
-  color: #fff;
+  border-bottom: 1px solid var(--line);
+  background: var(--lavender);
+  color: var(--ink);
 }
 
 .page-head::before {
@@ -879,7 +881,7 @@ li::marker {
   right: clamp(-7rem, -3vw, -2rem);
   width: clamp(17rem, 34vw, 31rem);
   height: clamp(17rem, 34vw, 31rem);
-  border: clamp(3rem, 6vw, 5.5rem) solid var(--iris);
+  border: clamp(3rem, 6vw, 5.5rem) solid var(--surface);
   border-radius: 50%;
 }
 
@@ -891,7 +893,7 @@ li::marker {
   width: 8rem;
   height: 8rem;
   border-radius: 1.35rem;
-  background: var(--acid);
+  background: var(--mint);
   transform: rotate(17deg);
 }
 
@@ -909,20 +911,20 @@ li::marker {
 }
 
 .page-head .page-kicker {
-  color: var(--acid);
+  color: var(--iris-dark);
 }
 
 .page-head .lead {
   max-width: 42rem;
   margin: 2rem 0 0;
-  color: #d3d4db;
+  color: var(--ink-soft);
   font-size: clamp(1.05rem, 2vw, 1.25rem);
   line-height: 1.55;
 }
 
 .page-head .updated {
   margin: 1.4rem 0 0;
-  color: #b6b7c0;
+  color: var(--ink-soft);
   font-size: .8rem;
 }
 
@@ -1291,8 +1293,9 @@ li::marker {
 
 .site-foot {
   padding: clamp(4rem, 8vw, 7.5rem) 0 2.5rem;
-  background: var(--ink);
-  color: #fff;
+  border-top: 1px solid var(--line);
+  background: var(--lavender);
+  color: var(--ink);
 }
 
 .site-foot .top {
@@ -1304,7 +1307,7 @@ li::marker {
 .site-foot .who .name {
   display: block;
   max-width: 10ch;
-  color: var(--acid);
+  color: var(--iris-dark);
   font-size: clamp(2.3rem, 5vw, 5rem);
   font-weight: 840;
   line-height: .92;
@@ -1313,7 +1316,7 @@ li::marker {
 
 .site-foot .who p {
   margin-top: 1rem;
-  color: #bfc0c8;
+  color: var(--ink-soft);
   font-size: .8rem;
   font-weight: 690;
   letter-spacing: .08em;
@@ -1331,16 +1334,16 @@ li::marker {
   display: inline-flex;
   min-height: 2.75rem;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, .2);
-  color: #ececf0;
+  border-bottom: 1px solid var(--line-dark);
+  color: var(--ink-soft);
   font-size: .82rem;
   font-weight: 670;
   text-decoration: none;
 }
 
 .site-foot nav a:hover {
-  border-color: var(--acid);
-  color: var(--acid);
+  border-color: var(--iris-dark);
+  color: var(--iris-dark);
 }
 
 .site-foot .notes {
@@ -1349,8 +1352,8 @@ li::marker {
   gap: 1.2rem 3rem;
   margin-top: clamp(3rem, 6vw, 5.5rem);
   padding-top: 1.4rem;
-  border-top: 1px solid rgba(255, 255, 255, .2);
-  color: #aeb0ba;
+  border-top: 1px solid var(--line-dark);
+  color: var(--ink-soft);
   font-size: .75rem;
 }
 
@@ -1359,7 +1362,7 @@ li::marker {
 }
 
 .site-foot .notes strong {
-  color: var(--coral);
+  color: var(--warning-ink);
 }
 
 /* Responsive -------------------------------------------------------------- */
@@ -1379,10 +1382,10 @@ li::marker {
     align-items: stretch;
     gap: 0;
     padding: .75rem;
-    border: 1px solid rgba(255, 255, 255, .14);
+    border: 1px solid var(--ink);
     border-radius: 1.2rem;
-    background: var(--ink);
-    box-shadow: 8px 8px 0 var(--iris);
+    background: var(--surface);
+    box-shadow: 8px 8px 0 var(--lavender);
   }
 
   .nav[data-open="true"] {
@@ -1391,24 +1394,24 @@ li::marker {
 
   .nav a {
     padding: .2rem .75rem;
-    border-bottom: 1px solid rgba(255, 255, 255, .14);
-    color: #fff;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
   }
 
   .nav a:hover,
   .nav a[aria-current="page"] {
-    color: var(--acid);
+    color: var(--iris-dark);
   }
 
   .nav a[aria-current="page"] {
-    box-shadow: inset 3px 0 0 var(--acid);
+    box-shadow: inset 3px 0 0 var(--iris-dark);
   }
 
   .nav .btn {
     margin-top: .75rem;
     border: 0;
-    background: var(--acid);
-    color: var(--ink);
+    background: var(--ink);
+    color: var(--surface);
   }
 
   .nav .btn::after {
@@ -1536,7 +1539,7 @@ li::marker {
   .opening > .wrap {
     padding: 1.45rem;
     border-radius: 1.4rem;
-    box-shadow: 6px 6px 0 var(--acid);
+    box-shadow: 6px 6px 0 var(--lavender);
   }
 
   .hero-kicker {
