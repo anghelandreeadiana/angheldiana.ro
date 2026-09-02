@@ -523,7 +523,7 @@ li::marker {
   margin: 0;
   overflow: hidden;
   border: .45rem solid var(--lavender);
-  border-radius: 13rem 13rem 1.6rem 1.6rem;
+  border-radius: var(--radius);
   background: #e7dfd5;
   box-shadow: 0 0 0 .2rem var(--sky);
 }
@@ -1561,7 +1561,7 @@ li::marker {
   .portrait {
     height: min(25rem, 105vw);
     border-width: .35rem;
-    border-radius: 9rem 9rem 1.1rem 1.1rem;
+    border-radius: var(--radius-sm);
   }
 
   .fact-bar p {
