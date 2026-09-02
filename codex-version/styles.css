@@ -524,7 +524,7 @@ li::marker {
   overflow: hidden;
   border: .45rem solid var(--lavender);
   border-radius: var(--radius);
-  background: #e7dfd5;
+  background: #d9d8d3;
   box-shadow: 0 0 0 .2rem var(--sky);
 }
 
