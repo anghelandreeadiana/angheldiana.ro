@@ -414,7 +414,7 @@ li::marker {
   border-radius: var(--radius-lg);
   background: var(--ink);
   color: #fff;
-  box-shadow: 12px 12px 0 var(--acid);
+  box-shadow: 12px 12px 0 var(--lavender);
 }
 
 .opening > .wrap::before {
@@ -424,7 +424,7 @@ li::marker {
   aspect-ratio: 1;
   top: -26%;
   right: -7%;
-  border: clamp(2.8rem, 6.5vw, 6rem) solid var(--iris);
+  border: clamp(2.8rem, 6.5vw, 6rem) solid var(--sky);
   border-radius: 50%;
 }
 
@@ -436,7 +436,7 @@ li::marker {
   width: 8rem;
   height: 8rem;
   border-radius: 1.5rem;
-  background: var(--coral);
+  background: var(--mint);
   transform: rotate(16deg);
 }
 
@@ -475,12 +475,12 @@ li::marker {
 }
 
 .opening h1 .accent {
-  color: var(--acid);
+  color: var(--lavender);
 }
 
 .opening .role {
   margin-bottom: 1.3rem;
-  color: #aaa5ff;
+  color: var(--lavender);
   font-size: .74rem;
   font-weight: 790;
   letter-spacing: .12em;
@@ -499,15 +499,15 @@ li::marker {
 }
 
 .opening .btn {
-  border-color: var(--acid);
-  background: var(--acid);
+  border-color: var(--lavender);
+  background: var(--lavender);
   color: var(--ink);
 }
 
 .opening .btn:hover {
   border-color: #fff;
   background: #fff;
-  box-shadow: 5px 5px 0 var(--iris);
+  box-shadow: 5px 5px 0 var(--sky);
   color: var(--ink);
 }
 
@@ -524,7 +524,7 @@ li::marker {
   border: .45rem solid #fff;
   border-radius: 13rem 13rem 1.6rem 1.6rem;
   background: #e7dfd5;
-  box-shadow: 0 0 0 .2rem var(--iris);
+  box-shadow: 0 0 0 .2rem var(--lavender);
 }
 
 .portrait img {
