@@ -518,8 +518,8 @@ li::marker {
 
 .portrait {
   position: relative;
-  align-self: stretch;
-  max-height: 24rem;
+  align-self: center;
+  height: 24rem;
   margin: 0;
   overflow: hidden;
   border: .45rem solid var(--lavender);
