@@ -406,7 +406,7 @@ li::marker {
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(19rem, .72fr);
-  min-height: min(46rem, calc(100vh - 7rem));
+  min-height: min(40rem, calc(100vh - 7rem));
   align-items: center;
   gap: clamp(2.3rem, 5vw, 5.4rem);
   padding: clamp(2.2rem, 5vw, 5.4rem);
@@ -519,7 +519,7 @@ li::marker {
 .portrait {
   position: relative;
   align-self: stretch;
-  max-height: 38rem;
+  max-height: 24rem;
   margin: 0;
   overflow: hidden;
   border: .45rem solid var(--lavender);
@@ -532,7 +532,7 @@ li::marker {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 24%;
+  object-position: 50% 72%;
 }
 
 .fact-bar {
@@ -1401,7 +1401,7 @@ li::marker {
 
   .portrait {
     width: min(100%, 30rem);
-    height: min(38rem, 115vw);
+    height: min(24rem, 82vw);
     justify-self: center;
   }
 
@@ -1517,7 +1517,7 @@ li::marker {
   }
 
   .portrait {
-    height: min(25rem, 105vw);
+    height: min(19rem, 78vw);
     border-width: .35rem;
     border-radius: var(--radius-sm);
   }
