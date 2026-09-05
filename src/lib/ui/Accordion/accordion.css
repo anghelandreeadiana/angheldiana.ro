@@ -1,0 +1,76 @@
+.ui-accordion {
+  margin-bottom: .85rem;
+  overflow: hidden;
+  border: 1px solid var(--ink);
+  border-radius: 1.1rem;
+  background: var(--surface);
+}
+
+.ui-accordion:target,
+.ui-accordion[open] {
+  background: var(--lavender);
+}
+
+.ui-accordion summary {
+  display: flex;
+  min-height: 4.4rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.2rem 1.35rem;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.8vw, 1.18rem);
+  font-weight: 730;
+  line-height: 1.35;
+  letter-spacing: -.02em;
+  list-style: none;
+  cursor: pointer;
+}
+
+.ui-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.ui-accordion summary:hover {
+  color: var(--iris);
+}
+
+.ui-accordion .chev {
+  position: relative;
+  flex: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: .5rem;
+  background: var(--ink);
+}
+
+.ui-accordion .chev::before,
+.ui-accordion .chev::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: .72rem;
+  height: 2px;
+  background: var(--acid);
+  transform: translate(-50%, -50%);
+  transition: transform .18s ease;
+}
+
+.ui-accordion .chev::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.ui-accordion[open] .chev::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.ui-accordion .answer {
+  max-width: 48rem;
+  padding: 0 4.5rem 1.5rem 1.35rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 560px) {
+  .ui-accordion .answer { padding-right: 1.35rem; }
+}

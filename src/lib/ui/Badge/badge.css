@@ -1,0 +1,11 @@
+.ui-badge {
+  display: inline-flex;
+  margin-top: .65rem;
+  padding: .36rem .62rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--mint);
+  color: var(--ink);
+  font-size: .7rem;
+  font-weight: 700;
+}

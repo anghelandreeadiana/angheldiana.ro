@@ -1,0 +1,1 @@
+Figtree variable WOFF2 fonts, normal and italic, from https://github.com/erikdkennedy/figtree at commit `032dfa7fe219ef3a02890d6d3add84eacc9aebfe`. Original files: `fonts/webfonts/Figtree[wght].woff2` and `Figtree-Italic[wght].woff2`. Unmodified font data; filenames simplified for serving. License: OFL-Figtree.txt.

@@ -1,0 +1,19 @@
+services:
+    sveltekit:
+        container_name: angheldiana_sveltekit
+        build: .
+        restart: unless-stopped
+        environment:
+            # The app only ever sits behind the host's Caddy. Without these,
+            # adapter-node resolves redirects and form actions against the
+            # container's own hostname instead of the public origin.
+            - ORIGIN=https://angheldiana.ro
+            - PROTOCOL_HEADER=x-forwarded-proto
+            - HOST_HEADER=x-forwarded-host
+        # no published ports: only Caddy reaches this container, over `web`
+        networks:
+            - web
+
+networks:
+    web:
+        external: true
